@@ -24,8 +24,7 @@
                 android:id="@+id/ivSingerImage"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:src="@drawable/singer"
-                android:background="#C5D4B4"/>
+                android:src="@drawable/logobackgroup" />
         </androidx.cardview.widget.CardView>
 
         <LinearLayout

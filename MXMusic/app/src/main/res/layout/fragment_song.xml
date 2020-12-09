@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <EditText
+
             android:id="@+id/edtSearchSong"
             android:layout_width="match_parent"
             android:layout_height="43dp"
@@ -35,8 +36,10 @@
                 android:id="@+id/lvSong"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:divider="@null"
                 android:scrollbars="none" />
         </LinearLayout>
+
 
     </LinearLayout>
 

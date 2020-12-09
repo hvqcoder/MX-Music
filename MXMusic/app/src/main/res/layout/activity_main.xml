@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <View
         android:id="@+id/view2"
@@ -30,7 +30,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/header_tablayout"
         app:tabSelectedTextColor="#58aaaa"
-        app:tabTextAppearance="@style/MineCustomTabText"></com.google.android.material.tabs.TabLayout>
+        app:tabTextAppearance="@style/MineCustomTabText" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
