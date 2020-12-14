@@ -116,6 +116,11 @@ public class SongAdapter extends BaseAdapter {
                     if (listID.indexOf(songModel.getId()) >= 0) {
                         new FavouriteDao(context).deleteFavourite(songModel.getId());
                         Toast.makeText(context,"Đã xóa bài hát khỏi thư mục yêu thích",Toast.LENGTH_SHORT).show();
+//                        Context context1 = FavouriteFragment.newInstance().getActivity();
+//                        if (context.toString().equals(context1.toString())){
+//                            list.remove(i);
+//                            notifyDataSetChanged();
+//                        }
                         bottomSheetDialog.dismiss();
                     } else {
                         new FavouriteDao(context).insertFavourite(songModel.getId());
@@ -140,7 +145,7 @@ public class SongAdapter extends BaseAdapter {
                         public void onClick(View v) {
                             context.getContentResolver().delete(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, MediaStore.Audio.Media._ID + "=" + songModel.getId(), null);
                             if (listID.indexOf(songModel.getId()) >= 0) {
-                                new FavouriteDao(context).deleteFavourite(songModel.getAlbumID());
+                                new FavouriteDao(context).deleteFavourite(songModel.getId());
                             }
                             list.remove(i);
                             notifyDataSetChanged();
